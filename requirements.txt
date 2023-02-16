@@ -1,0 +1,11 @@
+certifi==2022.12.7
+clip==0.2.0
+fastapi==0.91.0
+ftfy==6.1.1
+opencv-python==4.7.0.68
+pandas==1.5.3
+pip-chill==1.0.1
+python-multipart==0.0.5
+pyyaml==6.0
+regex==2022.10.31
+tqdm==4.64.1
