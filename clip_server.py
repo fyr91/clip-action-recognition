@@ -2,7 +2,7 @@
 # @Author: fyr91
 # @Date:   2023-02-13 15:40:14
 # @Last Modified by:   fyr91
-# @Last Modified time: 2023-02-22 19:02:31
+# @Last Modified time: 2023-02-24 15:48:06
 from fastapi import FastAPI, Form
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
@@ -169,6 +169,7 @@ async def cls(segs: List[str] = Form()):
 			t0 = time.time()
 			image = image.view((-1, num_seg, 3) + image.size()[-2:])
 			b, t, c, h, w = image.size()
+			print(image.size())
 			image_input = image.to(app.device).view(-1, c, h, w)
 			image_features = app.model.encode_image(image_input).view(b, t, -1)
 			image_features = app.fusion_model(image_features)
@@ -176,7 +177,7 @@ async def cls(segs: List[str] = Form()):
 
 			similarity = (100.0 * image_features @ app.text_features.T)
 			similarity = similarity.view(b, app.num_text_aug, -1).softmax(dim=-1)
-			similarity = similarity.mean(dim=1, keepdim=False)
+			similarity,_ = torch.max(similarity , dim=1)
 			values_1, indices_1 = similarity.topk(1, dim=-1)
 			values_5, indices_5 = similarity.topk(5, dim=-1)
 

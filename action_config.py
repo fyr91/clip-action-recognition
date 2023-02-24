@@ -2,7 +2,7 @@
 # @Author: fyr91
 # @Date:   2023-02-22 16:30:27
 # @Last Modified by:   fyr91
-# @Last Modified time: 2023-02-22 19:06:05
+# @Last Modified time: 2023-02-24 14:26:57
 fall_desc = [
 	"falling", 
 	"falling on the ground",
@@ -60,7 +60,8 @@ fight_doc_desc = [
 
 suicide_desc = [
 	"commiting suicide by hanging",
-	"hanging and strugglling"
+	"hanging and struggling",
+	"hanging on a rope"
 	# "commiting suicide by hanging around neck"
 
 ]
@@ -71,10 +72,7 @@ climb_desc = [
 ]
 
 gather_desc = [
-	"people gathering",
-	"cluster of people",
-	"people clustering",
-	"people procession"
+	"crowd gathering"
 ]
 
 violence_desc = [
