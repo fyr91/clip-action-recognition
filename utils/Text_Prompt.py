@@ -11,7 +11,13 @@ def text_prompt(data):
     #             f"Playing a kind of action, {{}}", f"Doing a kind of action, {{}}", f"Look, the human is {{}}",
     #             f"Can you recognize the action of {{}}?", f"Video classification of {{}}", f"A video of {{}}",
     #             f"The man is {{}}", f"The woman is {{}}", f"a crowd are {{}}"]
-    text_aug = [f"The man is {{}}", f"The woman is {{}}", f"a crowd are {{}}", f"A video of {{}}", f"Look, the human is {{}}", f"{{}} this is an action", f"{{}}, an action", f"Human action of {{}}"]
+    text_aug = [f"The man is {{}}", \
+                f"The woman is {{}}", \
+                f"a crowd are {{}}", \
+                f"A scene of {{}}", \
+                f"The human is {{}}", \
+                f"{{}}, an action", \
+                f"Human action of {{}}"]
     text_dict = {}
     num_text_aug = len(text_aug)
 

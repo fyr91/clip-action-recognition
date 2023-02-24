@@ -9,12 +9,16 @@ fall_desc = [
 	"falling on the floor",
 	"lying on the ground",
 	"lying on the floor",
-	"tripping over"
+	"tripping over",
+	"stumbling",
+	"knee down on the floor",
+	"rest on the floor",
+	"falling under a bed",
 ]
 
 fight_desc = [
 	"fighting",
-	"slam a person",
+	"slamming a person",
 	"striking a person",
 	"hititing a person",
 	"hitting each other",
@@ -27,13 +31,20 @@ fight_desc = [
 nudity_desc = [
 	"topless",
 	"naked",
+	"nude",
 	"exposing breasts",
-	"exposing anus",
+	"exposing buttocks",
 	"exposing genitalia",
 	"exposing breasts",
-	"exposing breasts",
+	"exposing tits",
+	"exposing boobs",
+	"exposing underwear",
 	"exposing belly",
-	"exposing nipples"
+	"exposing nipples",
+	"nudity scene",
+	"pornographic",
+	"porn",
+	"taking off clothes"
 ]
 
 fight_doc_desc = [
@@ -41,16 +52,18 @@ fight_doc_desc = [
 	# "strike a doctor",
 	# "kick a doctor",
 	"punching a doctor",
-	"slam a doctor",
+	"slamming a doctor",
 	# "slapping a doctor",
 	"hitting a doctor",
 	# "strike a nurse",
 	"fighting a nurse",
 	# "kick a nurse",
 	"punching a nurse",
-	"slam a nurse",
+	"slamming a nurse",
 	# "slapping a nurse",
 	"hitting a nurse",
+	"doctror fights",
+	"nurse fights",
 	# "fighting a epidemic prevention personnel",
 	# "kick a epidemic prevention personnel",
 	# "punching a epidemic prevention personnel",
@@ -59,8 +72,10 @@ fight_doc_desc = [
 ]
 
 suicide_desc = [
-	"commiting suicide by hanging",
-	"hanging and strugglling"
+	"commiting suicide",
+	"hanging and strugglling",
+	"hanging on a rope",
+	"knife wrist"
 	# "commiting suicide by hanging around neck"
 
 ]
@@ -68,32 +83,52 @@ suicide_desc = [
 climb_desc = [
 	"climbing over",
 	"climbing",
+	"climbing a wall",
+	"riding over a wall",
+	"bouldering"
 ]
 
 gather_desc = [
 	"people gathering",
 	"cluster of people",
 	"people clustering",
-	"people procession"
+	"people crowded"
 ]
 
 violence_desc = [
 	"destroying public facilities",
-	"kick stuff",
+	"kick object",
 	# "kick door",
 	# "kick wall",
-	"punching stuff",
+	"punching object",
 	# "punching door",
 	# "punching wall",
-	"hitting stuff",
+	"hitting object",
+	"smash object",
 	# "hitting door",
 	# "hitting wall",
 	"riot behaviour",
-	"violent behaviour"
+	"violent behaviour",
+	"chaotic behaviour",
+	"hit wall",
+	"hit door",
+	"smash door",
+	"smash wall",
+	"hit bed",
+	"smash bed",
 ]
 
 exclusion_desc = [
 	"sweeping floor",
 	"cleaning floor",
-	"pushing up"
+	"pushing up",
+	"push cart",
+	"walking on the road",
+	"talking to another person",
+	"lying on the bed",
+	"sleeping",
+	"writing",
+	"looking at computer",
+	"patient walking",
+	"eating fruit",
 ]
